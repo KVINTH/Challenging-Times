@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'warcrafts/', to: 'warcrafts#index', as: 'warcrafts'
+  get 'warcrafts/:number', to: 'warcrafts#show', as: 'warcraft'
+
   root 'pages#home', as: 'home'
 
   get 'pages/home'

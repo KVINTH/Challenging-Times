@@ -1,0 +1,7 @@
+<% if display_warcraft_link %>
+    <h2><%= link_to warcraft.hero, warcraft_path(warcraft) %></h2>
+    <p><%= warcraft.quote %></p>
+<% else %>
+    <h2><%= warcraft.hero %></h2>
+    <p><%= warcraft.quote %></p>
+<% end %>
